@@ -2,7 +2,6 @@ const getDB = require('./getDB');
 const faker = require('faker/locale/es');
 const { format } = require('date-fns');
 const fs = require('fs').promises;
-const mysql = require('mysql2');
 const path = require('path');
 
 const { NODE_ENV, MYSQL_DATABASE, MYSQL_DATABASE_TEST } = process.env;

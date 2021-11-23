@@ -61,7 +61,7 @@ export default function FileProperty({
       return photos.push(body.photo[index]);
     });
     put(
-      `http://192.168.5.103:4000/properties/${editProperty}`,
+      `http://localhost:4000/properties/${editProperty}`,
       photos.length > 1
         ? CreateFormDataMultipleFiles(photos)
         : CreateFormData({ photo: photos[0] }),
@@ -151,7 +151,7 @@ export default function FileProperty({
                             </button>
                             <img
                               src={
-                                'http://192.168.5.103:4000/photo/' + photo.name
+                                'http://localhost:4000/photo/' + photo.name
                               }
                               alt='prueba'
                               className='w-20 h-20 object-cover'
