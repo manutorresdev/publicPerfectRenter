@@ -8,7 +8,7 @@
  * Este es el nombre completo del usuario.
  * @type {String}
  */
-let fullName = 'Manu';
+const fullName = 'Manu'
 
 /*
  * ############
@@ -20,19 +20,19 @@ let fullName = 'Manu';
  * Lista de edades de usuarios.
  * @type {Array}
  */
-const age = [19, 20, 30, 100];
+const age = [19, 20, 30, 100]
 
 /**
  * Lista de scores de usuarios.
  * @type {Array<Number>}
  */
-const scores = [10, 199.99, 299.99];
+const scores = [10, 199.99, 299.99]
 
 /**
  * Lista de numeros y strings
  * @type {Array<Number | string>}
  */
-const scoresAndStrings = [10, '10', '30', 3000];
+const scoresAndStrings = [10, '10', '30', 3000]
 
 /*
  * ###############
@@ -46,8 +46,8 @@ const scoresAndStrings = [10, '10', '30', 3000];
  * @param {number} n2 Second number
  * @returns {number} Resultado suma.
  */
-function add(n1, n2) {
-  return n1 + n2;
+function add (n1, n2) {
+  return n1 + n2
 }
 
 /**
@@ -56,7 +56,7 @@ function add(n1, n2) {
  * @param {number} n2 Second number
  * @returns {string} Resultado suma en string
  */
-const addTwo = (n1, n2) => `El resultado es: ${n1 + n2}`;
+const addTwo = (n1, n2) => `El resultado es: ${n1 + n2}`
 
 /*
  * ##################
@@ -100,8 +100,8 @@ const myNewUser = {
   id: 1,
   name: 'manu',
   age: 30,
-  isActive: true,
-};
+  isActive: true
+}
 
 /**
  * @type {User}
@@ -111,8 +111,8 @@ const myNewUser2 = {
   id: 2,
   name: 'joe',
   age: 30,
-  isActive: false,
-};
+  isActive: false
+}
 
 /*
  * #############
@@ -134,18 +134,18 @@ const myNewUser2 = {
  * @param {number} y second numb
  * @returns {number} suma de los numeros
  */
-const suma = (x, y) => x + y;
+const suma = (x, y) => x + y
 /**
  * Resta
  * @param {number} x primer numero
  * @param {number} y second number
  * @returns {number} resta de los numeros
  */
-const resta = (x, y) => x - y;
+const resta = (x, y) => x - y
 
-const express = require('express');
+const express = require('express')
 
-const app = express();
+const app = express()
 
 /**
  * @module api
@@ -157,4 +157,4 @@ const app = express();
  * @path {GET} /
  *
  */
-app.get('/', (req, res) => res.send('Welcome'));
+app.get('/', (req, res) => res.send('Welcome'))
