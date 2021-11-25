@@ -17,7 +17,7 @@ export default function ContactUs () {
   function onSubmit (body, e) {
     e.preventDefault()
     post(
-      'https://api.reservalo.online/contact',
+      'http://localhost:4000/contact',
       CreateFormData(body),
       (data) => {
         setMessage({ message: data.message, status: 'ok' })

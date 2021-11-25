@@ -16,7 +16,7 @@ export default function RecoverPass () {
     e.preventDefault()
 
     put(
-      'https://api.reservalo.online/users/password/recover',
+      'http://localhost:4000/users/password/recover',
       body,
       (data) => {
         setMessage({

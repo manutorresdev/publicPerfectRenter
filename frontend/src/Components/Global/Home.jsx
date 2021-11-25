@@ -170,7 +170,7 @@ export function RentersList () {
     // const controller = new AbortController();
     if (Token) {
       get(
-        'https://api.reservalo.online/users',
+        'http://localhost:4000/users',
         (data) => {
           setUsers(data.users)
         },
@@ -267,8 +267,8 @@ export function Renter ({ user, Token }) {
         className=' w-full h-48 object-cover '
         src={
           user.avatar
-            ? 'https://api.reservalo.online/photo/' + user.avatar
-            : 'https://api.reservalo.online/photo/fotoperfil7.jpg'
+            ? 'http://localhost:4000/photo/' + user.avatar
+            : 'http://localhost:4000/photo/fotoperfil7.jpg'
         }
         alt=''
       />

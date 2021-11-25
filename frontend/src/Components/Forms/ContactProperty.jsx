@@ -49,7 +49,7 @@ export default function ContactProperty ({
     // const signal = controller.signal;
 
     get(
-      `https://api.reservalo.online/properties/${property.idProperty}/bookings`,
+      `http://localhost:4000/properties/${property.idProperty}/bookings`,
       (data) => {
         setBookings(data.bookings)
       },
@@ -85,7 +85,7 @@ export default function ContactProperty ({
     e.preventDefault()
     if (form === 'reservar') {
       post(
-        `https://api.reservalo.online/properties/${property.idProperty}/book`,
+        `http://localhost:4000/properties/${property.idProperty}/book`,
         CreateFormData(body),
         (data) => {
           setMessage(data)
@@ -99,7 +99,7 @@ export default function ContactProperty ({
       )
     } else if (form === 'contact') {
       post(
-        `https://api.reservalo.online/properties/${property.idProperty}/contact`,
+        `http://localhost:4000/properties/${property.idProperty}/contact`,
         CreateFormData(body),
         (data) => {
           setMessage({ status: data.status, message: data.message })
@@ -301,7 +301,7 @@ export default function ContactProperty ({
                           <img
                             key={i}
                             className='object-cover w-full h-96'
-                            src={'https://api.reservalo.online/photo/' + img.name}
+                            src={'http://localhost:4000/photo/' + img.name}
                             alt='default'
                           />
                         )
