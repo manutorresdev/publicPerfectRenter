@@ -38,7 +38,7 @@ const listUsers = async (req, res, next) => {
     let orderDirection = validDirectionOptions.includes(direction)
       ? direction
       : 'DESC'
-    const city = filtCity ?? '%'
+    const city = filtCity ? filtCity : '%'
 
     let users
     // Obtenemos los datos de todos los usuarios
